@@ -42,12 +42,6 @@ app.layout = html.Div(
                 value='India'
             )
         ]),
-        '''html.Div(className="four columns", children=[
-            html.H5('State / Province'),
-            dcc.Dropdown(
-                id='state'
-            )
-        ]),''' 
         html.Div(className="four columns", children=[
             html.H5('Selected Metrics'),
             dcc.Checklist(
