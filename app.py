@@ -39,15 +39,15 @@ app.layout = html.Div(
             dcc.Dropdown(
                 id='country',
                 options=[{'label':c, 'value':c} for c in countries],
-                value='Italy'
+                value='India'
             )
         ]),
-        html.Div(className="four columns", children=[
+        '''html.Div(className="four columns", children=[
             html.H5('State / Province'),
             dcc.Dropdown(
                 id='state'
             )
-        ]),
+        ]),''' 
         html.Div(className="four columns", children=[
             html.H5('Selected Metrics'),
             dcc.Checklist(
